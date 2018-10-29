@@ -11,4 +11,4 @@ router.get('/', function(req, res, next) {
   });
 router.get('/transaction/:hash', accountController.transactionDetailsByHash);
 
-module.exports = router;
+module.exports = router; 
