@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1 Accounts
+
+  form(method='POST' action='/')
+    div.form-group
+      label(for='address') Account Address :
+      input#address.form-control(type='text',  name='address' required='true' )
+      button.btn.btn-primary(type='submit') Submit
+
+  if (balance)
+    h4 Account Balance :  #{balance}
+
+  if ( transaction_list)
+    h4 Transactions : 
+    p #{transaction_list}
+            
+    
+
+
+
+        
